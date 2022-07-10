@@ -1,0 +1,16 @@
+<form>
+    <h1>EDITAR ALIMENTO</h1>
+ 
+    <mat-form-field class="form">
+        <mat-label>ALIMENTO</mat-label>
+        <input matInput [(ngModel)]="alimento.nome" type="text" name="nome"placeholder="NOME">
+    </mat-form-field>
+ 
+    <div class="buttons">
+        <button (click)="update()" class="mat-elevation-z8" mat-stroked-button color="primary"> ADICIONAR </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+    </div>
+ 
+ </form>
+
+ 

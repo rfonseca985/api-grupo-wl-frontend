@@ -1,0 +1,18 @@
+<form>
+    <h1>APAGAR COLABORADOR</h1>
+
+    <mat-form-field class="form">
+        <mat-label></mat-label>
+        <input matInput [(ngModel)]="colaborador.nome" type="text" name="nome" disabled>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label></mat-label>
+        <input matInput [(ngModel)]="colaborador.cpf" type="text" name="cpf" disabled>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="delete()"class="mat-elevation-z8" mat-stroked-button color="primary"> APAGAR </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+    </div>
+
+</form>

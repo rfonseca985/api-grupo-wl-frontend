@@ -1,0 +1,23 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav opened mode="side">
+        <mat-nav-list>
+<a routerLink="" mat-list-item>
+    <i class="material-icons">home</i>
+    Home
+</a>
+<a routerLink="/colaborador" mat-list-item>
+    <i class="material-icons">account_box</i>
+    Inscrição
+</a>
+<a routerLink="/colaborador/colaboradores" mat-list-item>
+    <i class="material-icons">check_circle</i>
+    Colaboradores inscritos
+</a>
+</mat-nav-list>
+    </mat-sidenav>
+
+<mat-sidenav-content>
+    <router-outlet></router-outlet>
+</mat-sidenav-content>
+
+</mat-sidenav-container>

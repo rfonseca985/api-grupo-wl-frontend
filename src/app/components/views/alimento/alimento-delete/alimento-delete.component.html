@@ -1,0 +1,14 @@
+<form>
+    <h1>EXCLUIR ALIMENTO</h1>
+ 
+    <mat-form-field class="form">
+        <mat-label>ALIMENTO</mat-label>
+        <input matInput [(ngModel)]="alimento.nome" type="text" name="nome" disabled>
+    </mat-form-field>
+ 
+    <div class="buttons">
+        <button  (click)="delete()"class="mat-elevation-z8" mat-stroked-button color="primary"> EXCLUIR </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+    </div>
+ 
+ </form>
