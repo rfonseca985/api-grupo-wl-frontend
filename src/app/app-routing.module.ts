@@ -49,7 +49,7 @@ const routes: Routes = [
     component: AlimentoDeleteComponent
   },
   {
-    path:'colaborador/colaboradores',
+    path:'colaborador/all',
     component: ColaboradorReadAllComponent
   }
 ];

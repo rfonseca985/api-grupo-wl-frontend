@@ -11,8 +11,10 @@ import { ColaboradorService } from '../colaborador.service';
 export class ColaboradorCreateComponent implements OnInit {
 
   colaborador: Colaborador = {
-    nome:'',
-    cpf:''
+    nome: '',
+    cpf: '',
+    id: '',
+    alimento: []
   }
 
   constructor(private service: ColaboradorService, private router: Router) { }

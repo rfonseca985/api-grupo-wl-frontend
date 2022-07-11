@@ -12,8 +12,9 @@ export class ColaboradorDeleteComponent implements OnInit {
 
   colaborador: Colaborador = {
     id: '',
-    nome:'',
-    cpf:''
+    nome: '',
+    cpf: '',
+    alimento: []
   }
   constructor(private service: ColaboradorService, private route: ActivatedRoute, private router: Router) { }
 

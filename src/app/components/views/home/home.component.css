@@ -2,12 +2,17 @@
     width: 95%;
     margin: 1rem auto;
 }
-@media(max-with: 450px){
+img{
+    height: 78%;
+    margin-left: 1.8rem;
+   
+    }
+@media(max-with: 410px){
     .home{
         width: 70%;
     }
 }
-@media(max-with: 770px){
+@media(max-with: 750px){
     .home{
         width: 80%;
     }

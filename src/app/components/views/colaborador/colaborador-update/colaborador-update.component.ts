@@ -11,10 +11,12 @@ import { ColaboradorService } from '../colaborador.service';
 export class ColaboradorUpdateComponent implements OnInit {
 
   colaborador: Colaborador= {
-    id:'',
-    nome:'',
-    cpf:''
+    id: '',
+    nome: '',
+    cpf: '',
+    alimento: []
   }
+
   constructor(private service: ColaboradorService , private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
@@ -22,7 +24,7 @@ export class ColaboradorUpdateComponent implements OnInit {
     this.findById()
   }
   findById(){
-  this.service.findById(this.colaborador.id!).subscribe((resposta)=>{
+  this.service.findById(this.colaborador.id).subscribe((resposta)=>{
     this.colaborador.nome = resposta.nome
     this.colaborador.cpf = resposta.cpf
   })
