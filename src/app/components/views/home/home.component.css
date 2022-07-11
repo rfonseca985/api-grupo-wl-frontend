@@ -3,17 +3,7 @@
     margin: 1rem auto;
 }
 img{
-    height: 78%;
+    height: 76%;
     margin-left: 1.8rem;
    
     }
-@media(max-with: 410px){
-    .home{
-        width: 70%;
-    }
-}
-@media(max-with: 750px){
-    .home{
-        width: 80%;
-    }
-}

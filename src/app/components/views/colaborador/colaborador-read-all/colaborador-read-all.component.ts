@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { Alimento } from "../../alimento/alimento.model";
 import { Colaborador } from "../colaborador.model";
 import { ColaboradorService } from "../colaborador.service";
 
@@ -9,12 +8,10 @@ import { ColaboradorService } from "../colaborador.service";
   styleUrls: ["./colaborador-read-all.component.css"],
 })
 export class ColaboradorReadAllComponent implements OnInit {
-  
   public colaboradores: Colaborador[] = [];
-  public alimentos: Alimento[] = [];
 
   displayedColumns: string[] = ["id", "nome", "cpf", "alimentos"];
-  
+
   constructor(private service: ColaboradorService) {}
 
   ngOnInit(): void {
@@ -27,5 +24,4 @@ export class ColaboradorReadAllComponent implements OnInit {
       this.colaboradores = resposta;
     });
   }
- 
 }
